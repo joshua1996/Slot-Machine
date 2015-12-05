@@ -159,20 +159,27 @@
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        Label6.Text = Val(Label6.Text) + 1
+        If Val(Label6.Text) < 10 Then
+            Label6.Text = Val(Label6.Text) + 1
+        End If
     End Sub
 
     Private Sub Button3_Click(sender As System.Object, e As System.EventArgs) Handles Button3.Click
-        If Val(Label6.Text) > 0 Then
+        If Val(Label6.Text) > 1 Then
             Label6.Text = Val(Label6.Text) - 1
         End If
     End Sub
 
     Private Sub Label6_Click(sender As System.Object, e As System.EventArgs) Handles Label6.Click
-
+    
     End Sub
 
     Private Sub Label6_TextChanged(sender As Object, e As System.EventArgs) Handles Label6.TextChanged
-        'For Each a As panel12.
+        Dim scoreArr() As Integer = {4, 7, 12, 14, 15, 16, 20, 50, 200}
+        Dim int As Integer
+        For Each a As Label In Panel12.Controls
+            a.Text = scoreArr(int) * Val(Label6.Text)
+            int += 1
+        Next
     End Sub
 End Class '120

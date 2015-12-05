@@ -45,45 +45,45 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label8 = New System.Windows.Forms.Label()
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
-        Me.Label10 = New System.Windows.Forms.Label()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox14 = New System.Windows.Forms.PictureBox()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox18 = New System.Windows.Forms.PictureBox()
+        Me.Label11 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox19 = New System.Windows.Forms.PictureBox()
         Me.PictureBox20 = New System.Windows.Forms.PictureBox()
         Me.PictureBox21 = New System.Windows.Forms.PictureBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.PictureBox22 = New System.Windows.Forms.PictureBox()
         Me.PictureBox23 = New System.Windows.Forms.PictureBox()
         Me.PictureBox24 = New System.Windows.Forms.PictureBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.PictureBox25 = New System.Windows.Forms.PictureBox()
         Me.PictureBox26 = New System.Windows.Forms.PictureBox()
         Me.PictureBox27 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.PictureBox28 = New System.Windows.Forms.PictureBox()
         Me.PictureBox29 = New System.Windows.Forms.PictureBox()
         Me.PictureBox30 = New System.Windows.Forms.PictureBox()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
@@ -208,7 +208,7 @@ Partial Class Form2
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(13, 13)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "0"
+        Me.Label6.Text = "1"
         '
         'Button2
         '
@@ -288,11 +288,11 @@ Partial Class Form2
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 24)
+        Me.Label7.Location = New System.Drawing.Point(15, 24)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(31, 13)
+        Me.Label7.Size = New System.Drawing.Size(25, 13)
         Me.Label7.TabIndex = 16
-        Me.Label7.Text = "1000"
+        Me.Label7.Text = "200"
         '
         'Panel2
         '
@@ -303,15 +303,6 @@ Partial Class Form2
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(134, 39)
         Me.Panel2.TabIndex = 17
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 66)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(25, 13)
-        Me.Label8.TabIndex = 17
-        Me.Label8.Text = "250"
         '
         'PictureBox7
         '
@@ -337,6 +328,15 @@ Partial Class Form2
         Me.PictureBox9.TabIndex = 13
         Me.PictureBox9.TabStop = False
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(15, 63)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(19, 13)
+        Me.Label8.TabIndex = 17
+        Me.Label8.Text = "50"
+        '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.PictureBox10)
@@ -346,15 +346,6 @@ Partial Class Form2
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(134, 39)
         Me.Panel3.TabIndex = 18
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 106)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(25, 13)
-        Me.Label9.TabIndex = 18
-        Me.Label9.Text = "100"
         '
         'PictureBox10
         '
@@ -380,6 +371,15 @@ Partial Class Form2
         Me.PictureBox12.TabIndex = 13
         Me.PictureBox12.TabStop = False
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(15, 102)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(19, 13)
+        Me.Label9.TabIndex = 18
+        Me.Label9.Text = "20"
+        '
         'Panel4
         '
         Me.Panel4.Controls.Add(Me.PictureBox13)
@@ -389,15 +389,6 @@ Partial Class Form2
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(134, 39)
         Me.Panel4.TabIndex = 19
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(15, 145)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(19, 13)
-        Me.Label10.TabIndex = 19
-        Me.Label10.Text = "80"
         '
         'PictureBox13
         '
@@ -423,6 +414,15 @@ Partial Class Form2
         Me.PictureBox15.TabIndex = 13
         Me.PictureBox15.TabStop = False
         '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(15, 141)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(19, 13)
+        Me.Label10.TabIndex = 19
+        Me.Label10.Text = "16"
+        '
         'Panel5
         '
         Me.Panel5.Controls.Add(Me.PictureBox16)
@@ -432,15 +432,6 @@ Partial Class Form2
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(134, 39)
         Me.Panel5.TabIndex = 19
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(12, 184)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(19, 13)
-        Me.Label11.TabIndex = 20
-        Me.Label11.Text = "75"
         '
         'PictureBox16
         '
@@ -466,6 +457,15 @@ Partial Class Form2
         Me.PictureBox18.TabIndex = 13
         Me.PictureBox18.TabStop = False
         '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(15, 180)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(19, 13)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "15"
+        '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.PictureBox19)
@@ -475,15 +475,6 @@ Partial Class Form2
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(134, 39)
         Me.Panel6.TabIndex = 19
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(14, 226)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(19, 13)
-        Me.Label12.TabIndex = 21
-        Me.Label12.Text = "70"
         '
         'PictureBox19
         '
@@ -509,6 +500,15 @@ Partial Class Form2
         Me.PictureBox21.TabIndex = 13
         Me.PictureBox21.TabStop = False
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(15, 219)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(19, 13)
+        Me.Label12.TabIndex = 21
+        Me.Label12.Text = "14"
+        '
         'Panel7
         '
         Me.Panel7.Controls.Add(Me.PictureBox22)
@@ -518,15 +518,6 @@ Partial Class Form2
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(134, 39)
         Me.Panel7.TabIndex = 19
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(12, 258)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(19, 13)
-        Me.Label13.TabIndex = 22
-        Me.Label13.Text = "60"
         '
         'PictureBox22
         '
@@ -552,6 +543,15 @@ Partial Class Form2
         Me.PictureBox24.TabIndex = 13
         Me.PictureBox24.TabStop = False
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(15, 258)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(19, 13)
+        Me.Label13.TabIndex = 22
+        Me.Label13.Text = "12"
+        '
         'Panel8
         '
         Me.Panel8.Controls.Add(Me.PictureBox25)
@@ -561,15 +561,6 @@ Partial Class Form2
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(134, 39)
         Me.Panel8.TabIndex = 19
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(14, 300)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(19, 13)
-        Me.Label14.TabIndex = 19
-        Me.Label14.Text = "35"
         '
         'PictureBox25
         '
@@ -595,6 +586,15 @@ Partial Class Form2
         Me.PictureBox27.TabIndex = 13
         Me.PictureBox27.TabStop = False
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(15, 336)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(13, 13)
+        Me.Label14.TabIndex = 19
+        Me.Label14.Text = "4"
+        '
         'Panel9
         '
         Me.Panel9.Controls.Add(Me.PictureBox28)
@@ -604,15 +604,6 @@ Partial Class Form2
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(134, 39)
         Me.Panel9.TabIndex = 19
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(145, 389)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(31, 13)
-        Me.Label15.TabIndex = 19
-        Me.Label15.Text = "1000"
         '
         'PictureBox28
         '
@@ -638,6 +629,15 @@ Partial Class Form2
         Me.PictureBox30.TabIndex = 13
         Me.PictureBox30.TabStop = False
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(15, 297)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(13, 13)
+        Me.Label15.TabIndex = 19
+        Me.Label15.Text = "7"
+        '
         'Panel10
         '
         Me.Panel10.Controls.Add(Me.PictureBox3)
@@ -651,7 +651,6 @@ Partial Class Form2
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.Panel12)
-        Me.Panel11.Controls.Add(Me.Label15)
         Me.Panel11.Controls.Add(Me.Panel9)
         Me.Panel11.Controls.Add(Me.Panel8)
         Me.Panel11.Controls.Add(Me.Panel7)
@@ -669,6 +668,7 @@ Partial Class Form2
         'Panel12
         '
         Me.Panel12.Controls.Add(Me.Label14)
+        Me.Panel12.Controls.Add(Me.Label15)
         Me.Panel12.Controls.Add(Me.Label13)
         Me.Panel12.Controls.Add(Me.Label12)
         Me.Panel12.Controls.Add(Me.Label11)
@@ -740,7 +740,6 @@ Partial Class Form2
         CType(Me.PictureBox30, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
         Me.Panel11.ResumeLayout(False)
-        Me.Panel11.PerformLayout()
         Me.Panel12.ResumeLayout(False)
         Me.Panel12.PerformLayout()
         Me.ResumeLayout(False)
