@@ -87,6 +87,7 @@ Partial Class Form2
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.Panel11 = New System.Windows.Forms.Panel()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -681,6 +682,10 @@ Partial Class Form2
         Me.Panel12.Size = New System.Drawing.Size(54, 354)
         Me.Panel12.TabIndex = 23
         '
+        'Timer5
+        '
+        Me.Timer5.Interval = 20
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -810,4 +815,5 @@ Partial Class Form2
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
+    Friend WithEvents Timer5 As System.Windows.Forms.Timer
 End Class

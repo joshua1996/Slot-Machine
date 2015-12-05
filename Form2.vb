@@ -6,6 +6,7 @@
     Dim position2 As Integer = r.Next(0, 6)
     Dim position3 As Integer = r.Next(0, 6)
     Dim endT As Integer
+    Dim winSpin As Integer
 
     Private Sub Form2_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
@@ -26,15 +27,19 @@
         Next
 
 
+        'For Each a In Panel1.Controls
+        '    If a.GetType() Is Label7 Then
+        '        Dim chk As PictureBox
+        '        chk = DirectCast(a, PictureBox)
+        '        chk.Image = framePrize(5, 0)
+        '    End If
+        'Next
         For Each a In Panel1.Controls
-            If a.GetType() Is Label7 Then
-                Dim chk As PictureBox
-                chk = DirectCast(a, PictureBox)
-                chk.Image = framePrize(5, 0)
-            End If
+            a.Image = framePrize(5, 0)
         Next
         For Each a In Panel2.Controls
             a.Image = framePrize(3, 0)
+
         Next
         For Each a In Panel3.Controls
             a.Image = framePrize(1, 0)
@@ -107,6 +112,10 @@
         'For Each a As Panel In Panel11.Controls
         '    a.BackColor = Nothing
         'Next
+        For Each a As Panel In Panel11.Controls
+            a.BackColor = DefaultBackColor
+        Next
+        Label5.Text = Val(Label5.Text) - Val(Label6.Text)
         Button1.Enabled = False
         Timer1.Enabled = True
         Timer2.Enabled = True
@@ -133,27 +142,43 @@
     Private Sub result()
         If PictureBox1.Image Is frame(5) And PictureBox2.Image Is frame(5) And PictureBox3.Image Is frame(5) Then
             Panel1.BackColor = Color.Yellow
+            winSpin = Label7.Text
+            Timer5.Enabled = True
         End If
         If PictureBox1.Image Is frame(3) And PictureBox2.Image Is frame(3) And PictureBox3.Image Is frame(3) Then
             Panel2.BackColor = Color.Yellow
+            winSpin = Label8.Text
+            Timer5.Enabled = True
         End If
         If PictureBox1.Image Is frame(1) And PictureBox2.Image Is frame(1) And PictureBox3.Image Is frame(1) Then
             Panel3.BackColor = Color.Yellow
+            winSpin = Label9.Text
+            Timer5.Enabled = True
         End If
-        If (PictureBox1.Image Is frame(0) Or PictureBox1.Image Is frame(2)) And (PictureBox2.Image Is frame(1) Or PictureBox2.Image Is frame(4)) And (PictureBox3.Image Is frame(1) Or PictureBox3.Image Is frame(4)) Then ''''''''
+        If (PictureBox1.Image Is frame(0) Or PictureBox1.Image Is frame(2)) And (PictureBox2.Image Is frame(1) Or PictureBox2.Image Is frame(4)) And (PictureBox3.Image Is frame(3) Or PictureBox3.Image Is frame(5)) Then ''''''''
             Panel4.BackColor = Color.Yellow
+            winSpin = Label10.Text
+            Timer5.Enabled = True
         End If
         If PictureBox1.Image Is frame(4) And PictureBox2.Image Is frame(4) And PictureBox3.Image Is frame(4) Then
             Panel5.BackColor = Color.Yellow
+            winSpin = Label11.Text
+            Timer5.Enabled = True
         End If
         If PictureBox1.Image Is frame(0) And PictureBox2.Image Is frame(0) And PictureBox3.Image Is frame(0) Then
             Panel6.BackColor = Color.Yellow
+            winSpin = Label12.Text
+            Timer5.Enabled = True
         End If
         If PictureBox1.Image Is frame(2) And PictureBox2.Image Is frame(2) And PictureBox3.Image Is frame(2) Then
             Panel7.BackColor = Color.Yellow
+            winSpin = Label13.Text
+            Timer5.Enabled = True
         End If
         If (PictureBox1.Image Is frame(0) Or PictureBox1.Image Is frame(2) Or PictureBox1.Image Is frame(4)) And (PictureBox2.Image Is frame(0) Or PictureBox2.Image Is frame(2) Or PictureBox2.Image Is frame(4)) And (PictureBox3.Image Is frame(0) Or PictureBox3.Image Is frame(2) Or PictureBox3.Image Is frame(4)) Then '''''
             Panel8.BackColor = Color.Yellow
+            winSpin = Label15.Text
+            Timer5.Enabled = True
         End If
    
     End Sub
@@ -181,5 +206,12 @@
             a.Text = scoreArr(int) * Val(Label6.Text)
             int += 1
         Next
+    End Sub
+
+    Private Sub Timer5_Tick(sender As System.Object, e As System.EventArgs) Handles Timer5.Tick
+        For i As Integer = 1 To winSpin '7
+            Label5.Text = Val(Label5.Text) + 1
+        Next
+        Timer5.Enabled = False
     End Sub
 End Class '120
