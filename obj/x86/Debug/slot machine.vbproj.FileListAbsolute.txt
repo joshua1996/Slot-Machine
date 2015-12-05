@@ -1,0 +1,10 @@
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\bin\Debug\slot machine.exe
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\bin\Debug\slot machine.pdb
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\bin\Debug\slot machine.xml
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot_machine.Form1.resources
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot_machine.Resources.resources
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.vbproj.GenerateResource.Cache
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.exe
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.xml
+c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.pdb
+C:\Users\MSI\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot_machine.Form2.resources
