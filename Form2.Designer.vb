@@ -189,9 +189,8 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(33, 280)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(59, 13)
+        Me.Label4.Size = New System.Drawing.Size(0, 13)
         Me.Label4.TabIndex = 8
-        Me.Label4.Text = "LAST WIN"
         '
         'Label5
         '
@@ -225,7 +224,6 @@ Partial Class Form2
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(30, 18)
         Me.Button3.TabIndex = 12
-        Me.Button3.Text = "Button3"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox4
@@ -684,7 +682,7 @@ Partial Class Form2
         '
         'Timer5
         '
-        Me.Timer5.Interval = 20
+        Me.Timer5.Interval = 50
         '
         'Form2
         '

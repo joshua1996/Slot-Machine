@@ -7,9 +7,10 @@
     Dim position3 As Integer = r.Next(0, 6)
     Dim endT As Integer
     Dim winSpin As Integer
+    Dim isWin As Boolean
 
     Private Sub Form2_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
-
+        Form3.ShowDialog()
         spriteSheet()
         Console.WriteLine(position & position2 & position3)
         PictureBox1.Image = frame(position)
@@ -133,58 +134,107 @@
                     Timer3.Enabled = False
                     endT = 0
                     result()
+                    checkLose()
+                    If Label6.Text = 0 Then
+                        Label6.Text = 1
+                    End If
                     Button1.Enabled = True
+                    
                 End If
             End If
         End If
     End Sub
 
     Private Sub result()
+
         If PictureBox1.Image Is frame(5) And PictureBox2.Image Is frame(5) And PictureBox3.Image Is frame(5) Then
             Panel1.BackColor = Color.Yellow
             winSpin = Label7.Text
             Timer5.Enabled = True
+            Label4.Text = Label7.Text
+            isWin = True
+            '  checkLose()
         End If
         If PictureBox1.Image Is frame(3) And PictureBox2.Image Is frame(3) And PictureBox3.Image Is frame(3) Then
             Panel2.BackColor = Color.Yellow
             winSpin = Label8.Text
             Timer5.Enabled = True
+            Label4.Text = Label8.Text
+            isWin = True
+            ' checkLose()
         End If
         If PictureBox1.Image Is frame(1) And PictureBox2.Image Is frame(1) And PictureBox3.Image Is frame(1) Then
             Panel3.BackColor = Color.Yellow
             winSpin = Label9.Text
             Timer5.Enabled = True
+            Label4.Text = Label9.Text
+            ' checkLose()
+            isWin = True
         End If
         If (PictureBox1.Image Is frame(0) Or PictureBox1.Image Is frame(2)) And (PictureBox2.Image Is frame(1) Or PictureBox2.Image Is frame(4)) And (PictureBox3.Image Is frame(3) Or PictureBox3.Image Is frame(5)) Then ''''''''
             Panel4.BackColor = Color.Yellow
             winSpin = Label10.Text
             Timer5.Enabled = True
+            Label4.Text = Label10.Text
+            ' checkLose()
+            isWin = True
         End If
         If PictureBox1.Image Is frame(4) And PictureBox2.Image Is frame(4) And PictureBox3.Image Is frame(4) Then
             Panel5.BackColor = Color.Yellow
             winSpin = Label11.Text
             Timer5.Enabled = True
+            Label4.Text = Label11.Text
+            '  checkLose()
+            isWin = True
         End If
         If PictureBox1.Image Is frame(0) And PictureBox2.Image Is frame(0) And PictureBox3.Image Is frame(0) Then
             Panel6.BackColor = Color.Yellow
             winSpin = Label12.Text
             Timer5.Enabled = True
+            Label4.Text = Label12.Text
+            '  checkLose()
+            isWin = True
         End If
         If PictureBox1.Image Is frame(2) And PictureBox2.Image Is frame(2) And PictureBox3.Image Is frame(2) Then
             Panel7.BackColor = Color.Yellow
             winSpin = Label13.Text
             Timer5.Enabled = True
+            Label4.Text = Label13.Text
+            '  checkLose()
+            isWin = True
         End If
         If (PictureBox1.Image Is frame(0) Or PictureBox1.Image Is frame(2) Or PictureBox1.Image Is frame(4)) And (PictureBox2.Image Is frame(0) Or PictureBox2.Image Is frame(2) Or PictureBox2.Image Is frame(4)) And (PictureBox3.Image Is frame(0) Or PictureBox3.Image Is frame(2) Or PictureBox3.Image Is frame(4)) Then '''''
             Panel8.BackColor = Color.Yellow
             winSpin = Label15.Text
             Timer5.Enabled = True
+            Label4.Text = Label15.Text
+            '   checkLose()
+            isWin = True
         End If
-   
+
+        If Val(Label5.Text) < Val(Label6.Text) Then
+            Label6.Text = Label5.Text
+
+        End If
+
+        'If Label5.Text = 0 Then
+        '    MsgBox("game over")
+        '    Form3.ShowDialog()
+
+        'End If
+    End Sub
+
+    Private Sub checkLose()
+       
+        If Label5.Text = 0 And isWin = False Then
+            MsgBox("game over")
+            Form3.ShowDialog()
+
+        End If
     End Sub
 
     Private Sub Button2_Click(sender As System.Object, e As System.EventArgs) Handles Button2.Click
-        If Val(Label6.Text) < 10 Then
+        If Val(Label6.Text) < 10 And Val(Label5.Text) > Val(Label6.Text) Then
             Label6.Text = Val(Label6.Text) + 1
         End If
     End Sub

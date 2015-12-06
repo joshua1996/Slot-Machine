@@ -8,3 +8,4 @@ c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj
 c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.xml
 c:\users\msi\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot machine.pdb
 C:\Users\MSI\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot_machine.Form2.resources
+C:\Users\MSI\documents\visual studio 2010\Projects\slot machine\slot machine\obj\x86\Debug\slot_machine.Form3.resources
